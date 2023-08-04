@@ -2,6 +2,15 @@ let num1;
 let num2;
 let operator;
 
+// Selecting everything.
+let display = document.getElementById("display");
+const current = document.getElementsByClassName("current");
+const previous = document.getElementsByClassName("previous");
+const numbersButtons = Array.from(document.getElementsByClassName("num"));
+const operationButtons = document.getElementsByClassName("operation-btn");
+const clear = document.getElementsByClassName("clear-btn");
+const equal = document.getElementsByClassName("equal-btn");
+
 const add = function (num1, num2) {
   return num1 + num2;
 };
@@ -36,4 +45,3 @@ const operate = function (num1, num2, operator) {
     return false;
   }
 };
-// console.log(operate(1, 4, "+"));
